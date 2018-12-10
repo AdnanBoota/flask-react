@@ -1,6 +1,6 @@
 // App.jsx
 import React from "react";
-import Nav from "./Nav";
+import Navigation from "./Navigation";
 import Hello from "./Hello";
 
 require('../css/fullstack.css');
@@ -21,7 +21,7 @@ export default class App extends React.Component {
     render() {
         return (
             <div>
-                <Nav/>
+                <Navigation/>
 
                 <div className='header-contents'>
 
