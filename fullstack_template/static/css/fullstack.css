@@ -1,0 +1,17 @@
+.header-contents {
+    padding: 50px;
+}
+
+.header-contents h1 {
+    font-size: 60px;
+    font-weight: 200;
+}
+
+#root {
+    background-image: url('../images/header.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
