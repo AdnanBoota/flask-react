@@ -1,7 +1,9 @@
 import React from "react";
-import {Button, Grid, Row, Col} from "react-bootstrap";
+import {Button, Container, Row, Col} from "reactstrap";
 
-var $ = require('jquery');
+// var $ = require('jquery');
+const axios = require('axios');
+
 
 export default class Hello extends React.Component {
     constructor(props) {
@@ -16,29 +18,46 @@ export default class Hello extends React.Component {
     }
 
     getPythonHello() {
-        $.get(window.location.href + 'hello', (data) => {
-            console.log(data);
-            this.personaliseGreeting(data);
-        });
+        var that_class = this;
+        // Make a request for a user with a given ID
+        axios.get(window.location.href + 'hello')
+            .then(function (response) {
+                // console.log('coming here');
+                // handle success
+                that_class.personaliseGreeting(response.data);
+                console.log(response);
+            })
+            .catch(function (error) {
+                // handle error
+                console.log(error);
+            })
+            .then(function () {
+                // always executed
+                // console.log('always coming here');
+            });
+        // $.get(window.location.href + 'hello', (data) => {
+        //     console.log(data);
+        //     this.personaliseGreeting(data);
+        // });
     }
 
     render() {
         return (
-            <Grid>
+            <Container>
                 <Row>
-                    <Col md={7} mdOffset={5}>
+                    <Col md={12}>
                         <h1>{this.state.greeting}</h1>
                         <hr/>
                     </Col>
                 </Row>
                 <Row>
-                    <Col md={7} mdOffset={5}>
-                        <Button bsSize="small" bsStyle="danger" onClick={this.getPythonHello}>
+                    <Col md={12}>
+                        <Button color="info" onClick={this.getPythonHello}>
                             Say Hello!
                         </Button>
                     </Col>
                 </Row>
-            </Grid>
+            </Container>
         );
     }
 }
