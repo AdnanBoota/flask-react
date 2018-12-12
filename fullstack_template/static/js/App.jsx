@@ -1,6 +1,7 @@
 // App.jsx
 import React from "react";
 import Navigation from "./Navigation";
+import FirstChart from "./FirstChart";
 import Hello from "./Hello";
 
 require('../css/fullstack.css');
@@ -22,11 +23,9 @@ export default class App extends React.Component {
         return (
             <div>
                 <Navigation/>
+                <FirstChart/>
 
-                <div className='header-contents'>
 
-                    <Hello name='Adnan'/>
-                </div>
             </div>
         );
     }
