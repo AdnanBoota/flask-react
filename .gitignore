@@ -1,2 +1,3 @@
 fullstack_template/static/node_modules
-idea
+fullstack_template/static/dist/bundle.js
+.idea/
