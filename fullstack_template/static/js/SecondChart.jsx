@@ -7,7 +7,7 @@ import * as dc from 'dc';
 import moment from 'moment/src/moment';
 
 const axios = require('axios');
-export default class FirstChart extends React.Component {
+export default class SecondChart extends React.Component {
     constructor(props) {
         super(props);
         //
@@ -107,7 +107,7 @@ export default class FirstChart extends React.Component {
                 <Container>
                     <Row>
                         <Col md={12}>
-                            <h1>React Dc.js Chart</h1>
+                            <h1>2nd Chart - React Dc.js Chart</h1>
                             <hr/>
                         </Col>
                     </Row>

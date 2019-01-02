@@ -7,11 +7,69 @@
     font-weight: 200;
 }
 
-#root {
-    /*background-image: url('../images/header.jpg');*/
-    /*background-repeat: no-repeat;*/
-    /*background-position: center;*/
-    /*background-size: cover;*/
-    /*height: 100%;*/
-    /*width: 100%;*/
+/* #root { */
+
+/*background-image: url('../images/header.jpg');*/
+
+/*background-repeat: no-repeat;*/
+
+/*background-position: center;*/
+
+/*background-size: cover;*/
+
+/*height: 100%;*/
+
+/*width: 100%;*/
+
+/* } */
+
+.nav-item {
+    margin-right: 20px;
+}
+
+.reset {
+    visibility: hidden;
+}
+
+.single_chart_type {
+    float: right !important;
+    text-align: right;
+}
+
+#deviceId {
+    float: left;
+    width: 400px;
+}
+
+#sourceId {
+    float: left;
+    margin-left: 20px;
+    width: 220px;
+}
+
+.datepickerDiv {
+    float: left;
+    margin-left: 20px
+}
+
+.brush rect.extent {
+    fill: steelblue;
+    fill-opacity: .125;
+}
+
+/*Color for the brush resize path*/
+
+.brush .resize path {
+    fill: #eee;
+    stroke: #666;
+}
+
+/*Color for the hidden object*/
+
+.hidden {
+    fill: grey;
+}
+
+.bar {
+    fill: steelblue;
 }

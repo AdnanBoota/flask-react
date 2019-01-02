@@ -14,7 +14,7 @@ const config = {
             {
                 test: /\.jsx?/,
                 exclude: /node_modules/,
-                use: 'babel-loader'
+                use: 'babel-loader',
             },
             {
                 test: /\.css$/,
@@ -31,6 +31,7 @@ const config = {
 
     },
     plugins: [
+        new webpack.NamedModulesPlugin(),
         new ExtractTextPlugin('styles.css'),
     ]
 };

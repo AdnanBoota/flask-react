@@ -12,6 +12,7 @@ import {
     DropdownMenu,
     DropdownItem
 } from 'reactstrap';
+import {Link} from "react-router-dom";
 
 
 export default class Navigation extends React.Component {
@@ -39,7 +40,16 @@ export default class Navigation extends React.Component {
                     <Collapse isOpen={this.state.isOpen} navbar>
                         <Nav className="ml-auto" navbar>
                             <NavItem>
-                                <NavLink href="/components/">Components</NavLink>
+                              <Link to="/safe-states/">Safe States</Link>
+                            </NavItem>
+                            <NavItem>
+                                <Link to="/service-modes/">Service Modes</Link>
+                            </NavItem>
+                            <NavItem>
+                               <Link to="/torque-offset/">Torque Offset</Link>
+                            </NavItem>
+                            <NavItem>
+                                <Link to="/step-response/">Step Response</Link>
                             </NavItem>
                         </Nav>
                     </Collapse>
