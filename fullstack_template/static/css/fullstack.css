@@ -36,9 +36,9 @@
     text-align: right;
 }
 
-#deviceId {
+#deviceId .dc-chart select {
     float: left;
-    width: 400px;
+    width: 300px;
 }
 
 #sourceId {
@@ -72,4 +72,16 @@
 
 .bar {
     fill: steelblue;
+}
+
+#timeOverviewChart .dc-chart g.y {
+    display: none;
+}
+
+rect.my-fade {
+    fill: #ddd;
+}
+
+.datePickerStyle {
+    height: 30px;
 }
